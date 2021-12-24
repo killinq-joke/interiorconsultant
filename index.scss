@@ -12,8 +12,15 @@ a {
     font-family: Monserrat, sans-serif;
     font-weight: 500;
     &:hover {
-        font-weight: 700;
         border-bottom: 2px solid white;
+    }
+}
+
+a:nth-child(1) {
+    font-weight: 700;
+    border-bottom: 2px solid white;
+    &:hover {
+        border-bottom: 2px solid transparent;
     }
 }
 
@@ -25,15 +32,21 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .buttons {
+    .navlinks {
         display: flex;
         justify-content: space-between;
         width: 50%;
+        a {
+            padding-bottom: 0.5%;
+        }
     }
 }
 
 .logo {
     h3 {
+        font-family: "Crimson Pro";
+        font-weight: 200;
+        text-transform: uppercase;
         border: 1px solid white;
         padding: 5px;
     }
@@ -47,6 +60,7 @@ main {
     a {
         display: flex;
         align-items: center;
+        width: fit-content;
     }
 }
 
